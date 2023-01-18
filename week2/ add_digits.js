@@ -10,4 +10,4 @@ function solution(n) {
         answer += Number(n_string[i]); 
     }
     return answer;
-}
+}å
