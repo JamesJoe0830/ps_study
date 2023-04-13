@@ -12,7 +12,7 @@ graph = [list(map(int,input().rstrip())) for _ in range(N)]
 ans_graph = [list(map(int,input().rstrip())) for _ in range(N)]
 
 count = 0 
-#바꾸는 함수 호출
+#바꾸는 함수 호출 -> 이거 필요 없는거 아니야 ? 밑에꺼 풀면??
 def check():
     for i in range(N):
         for j in range(M):
