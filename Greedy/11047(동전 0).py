@@ -1,7 +1,7 @@
 # https://www.acmicpc.net/problem/11047 -> 동전 0 (실버4) Greedy
 # <풀이 방법>
 #  while문 돌면서 for 문에서 coins 리스트값을 뺐을때 몫을 곱해주면서 cnt 더해줌 
-
+# -----------------------------------------------------------------------------
 import sys
 input = sys.stdin.readline
 
@@ -23,4 +23,5 @@ while True:
             K = K - quotient*coins[n]
             cnt = cnt + quotient
             break
+# -----------------------------------------------------------------------------
 
