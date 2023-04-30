@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/5567 (결혼식)
+
 import sys
 input =sys.stdin.readline
 from collections import deque
@@ -15,7 +17,7 @@ def BFS(v):
     Que = deque([v])
     for i in range(n+1):
         if friends[v][i] ==1:
-            Que.append(i)
+            Que.append(i) #여기서 친구만 큐에 넣어주므로 더 안내려감 
             invite.append(i)
     if not invite:
         print(0)
