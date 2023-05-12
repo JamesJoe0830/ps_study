@@ -1,3 +1,5 @@
+#  https://www.acmicpc.net/problem/1092
+
 import sys
 input = sys.stdin.readline
 N = int(input()) # 크레인 대수
