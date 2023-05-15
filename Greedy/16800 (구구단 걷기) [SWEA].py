@@ -1,8 +1,9 @@
 # https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AYaf9W8afyMDFAQ9&categoryId=AYaf9W8afyMDFAQ9&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1
 # 16800. 구구단 걷기 [D3]
+# ->🔥 약수의 개수 시간복잡도를 줄일 수 있는 좋은 문제 🔥
 # 
-# 
-# 
+# <Greedy 인 이유?>
+# 0. 최적의 경로를 선택해야 하기 때문 
 # 
 # -----------------------------------------------------------------------------
 import sys
@@ -15,7 +16,7 @@ def Division(n):
     division= []
     global answer
 
-    #약수의 개수 출력은 제곱근으로 해서 시간복잡도를 줄이는게 좋다.
+    # 🔥 약수의 개수 출력은 제곱근으로 해서 시간복잡도를 줄이는게 좋다.
     for i in range(1,int(n**(1/2)) +1): 
         if n % i ==0:
             division.append(i)
@@ -40,6 +41,7 @@ for test_case in range(TC):
 # 출력 
 for i in range(TC):
     print("#{} {}".format(i+1, answer[i]))
+
 
 # -----------------------------------------------------------------------------
 
