@@ -19,7 +19,7 @@ Num = deque()
 answer = []
 for n in range(1, N+1):
     Num.append(n)
-
+print(Num)
 while Num:
     # 🔥 핵심 : 앞에 k-1개를 빼서 뒤로 가져다 붙이고 K 번째 뽑아서 answer에 저장 🔥 
     for i in range(K-1): 
