@@ -1,6 +1,6 @@
 # https://www.acmicpc.net/problem/2468
 # 2468. 안전 영역 [🥈 실버 1]
-# 
+# ⏰ 걸린 시간: 30분
 # 
 # 
 # [recursion DFS로 푼 근거]
