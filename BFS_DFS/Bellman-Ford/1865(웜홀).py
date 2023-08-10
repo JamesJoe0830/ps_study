@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/1865
-# 1865. 웜홀 [🥇 골드 3] -> 🔥 오답 필요
+# 1865. 웜홀 [🥇 골드 3] -> 🔥 오답 필요 [오답 횟수: 1회]
 # 📚 알고리즘 분류: 벨만 포드 
 # ⏰ 걸린 시간 : 42분 
 # 시간복잡도 : O(VE)
@@ -42,7 +42,8 @@ for t in range(TC):
         for i in range(1,N+1):
             for S in range(1,N+1):
                 for E, T in roads[S]:
-                    if times[E] > times[start]+T:
+                    if times[E] > times[start]+T: 
+                        # 여기서 INF != times[S] 를 하지 않는 이유: 모든 노드에서 시작하지 않고 1번에서만 검사를 할때 1-2-3 4-5 이런식으로 끊긴 노드가 발생하면 4-5를 검사하지 못하기 때문
                         times[E] = times[start]+T
                         if i == N: #N번 이후에도 값이 갱신되면 음수 사이클 존재.
                             return print('YES')
