@@ -8,6 +8,10 @@
 # 1. 비교값을 정하고 뒤에 남은 값들이 비교값보다 크가나 같을 경우 cnt를 올려준다.
 # 2. cnt 올린만큼 Q에서 pop해주기 
 # 3. 값이 작다면 멈추고 다음 while문으로 돈다.
+# 
+# [스택으로 접근하면 안되나 ?]
+# 0. 스택으로 접근해도 괜찮지만 큐로 접근해서 푸는 방식이 더 무난하다.
+# 
 import math
 from collections import deque
 def solution(progresses, speeds):
