@@ -26,7 +26,5 @@ def solution(priorities, location):
                 return answer
         else :
             Q.append((priority, index))
-    print(Q)
-
-    return answer
+    # print(Q)
 # ----------------------------------------------------------------------
