@@ -11,7 +11,7 @@
 # 
 # [스택으로 접근하면 안되나 ?]
 # 0. 스택으로 접근해도 괜찮지만 큐로 접근해서 푸는 방식이 더 무난하다.
-# 
+# ------------------------------------------------------------------------------------
 import math
 from collections import deque
 def solution(progresses, speeds):
@@ -36,3 +36,4 @@ def solution(progresses, speeds):
         answer.append(cnt)    
 
     return answer
+# ------------------------------------------------------------------------------------
