@@ -44,7 +44,7 @@ def prim():
             node_lengths.append(len)
             for next_len, next_node in graph[node]:
                 heapq.heappush(q,(next_len,next_node))
-    
+    print(node_lengths)
     return sum(node_lengths) -max(node_lengths)
 
 print(prim())
